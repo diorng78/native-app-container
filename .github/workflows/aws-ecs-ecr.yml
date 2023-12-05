@@ -31,10 +31,10 @@ on:
     branches: [ "main" ]
 
 env:            
-  AWS_REGION: ap-southeast-1           
-  ECR_REPOSITORY: chathra-node-app       
-  ECS_SERVICE: ecsdemo         
-  ECS_CLUSTER: ecs-tf                     
+  AWS_REGION: us-east-1           
+  ECR_REPOSITORY: diorng-3-15       
+  ECS_SERVICE: dior-cluster1         
+  ECS_CLUSTER: dn-3-5                     
   CONTAINER_NAME: ecs-sample         
                                                
 

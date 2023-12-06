@@ -26,7 +26,7 @@ module "ecs" {
   }
 
   services = {
-    ecsdemo = { #task def and service name -> #Change
+    dior-task1 = { #task def and service name -> #Change
       cpu    = 512
       memory = 1024
 

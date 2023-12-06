@@ -35,7 +35,7 @@ env:
   ECR_REPOSITORY: diorng-3-15       
   ECS_SERVICE: dior-cluster1         
   ECS_CLUSTER: dn-3-5                     
-  CONTAINER_NAME: ecs-sample         
+  CONTAINER_NAME: nginx         
                                                
 
 # permissions:
@@ -74,7 +74,7 @@ jobs:
     
     - name: Download task definition
       run: |
-        aws ecs describe-task-definition --task-definition dior-task1:1 --query taskDefinition > task-definition.json
+        aws ecs describe-task-definition --task-definition dior-task1 --query taskDefinition > task-definition.json
 
     - name: Fill in the new image ID in the Amazon ECS task definition
       id: task-def
